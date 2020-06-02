@@ -1,0 +1,20 @@
+@import '@folio/stripes-components/lib/variables';
+
+.custom-embargo-fields {
+  align-items: flex-start;
+  display: flex;
+}
+
+.custom-embargo-text-field {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.custom-embargo-select {
+  flex: 1;
+}
+
+.custom-embargo-clear-row {
+  flex: 0 0 3em;
+  text-align: center;
+}

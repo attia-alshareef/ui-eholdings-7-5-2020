@@ -1,0 +1,82 @@
+@import '@folio/stripes-components/lib/variables';
+
+.container {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  &.hasFooter {
+    height: calc(100vh - 160px);
+  }
+
+  &.locked {
+    overflow-y: hidden;
+  }
+
+  & .list-header {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid var(--minor-divider-color);
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 100%;
+  }
+
+  &.locked .list-header {
+    border-top: 1px solid #fff;
+  }
+}
+
+.header {
+  padding: 0 1rem;
+  margin: 3rem auto 1rem auto;
+  max-width: 50rem;
+
+  & h1:focus,
+  & h2:focus,
+  & h3:focus,
+  & h4:focus {
+    outline: none;
+  }
+
+  & button {
+    float: right;
+  }
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+.container .list-header p {
+  color: var(--secondary);
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.sticky {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+
+  & section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  & [role="tabpanel"] {
+    margin-left: 0;
+  }
+
+  & .list {
+    /* the box-model needs _some_ height that is not 'auto' for flexbox to
+       be able to fill this element to fit the remaining space */
+    min-height: 0;
+    flex: 1;
+  }
+}

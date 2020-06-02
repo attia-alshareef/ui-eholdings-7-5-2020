@@ -1,0 +1,21 @@
+@import '@folio/stripes-components/lib/variables';
+
+.pre-search-pane-content {
+  padding: 0 15px;
+  color: rgba(0, 0, 0, 0.62);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f9f9f9;
+  flex-direction: column;
+}
+
+.pre-search-pane-content-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: var(--font-size-large);
+}

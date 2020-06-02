@@ -1,0 +1,31 @@
+@import '@folio/stripes-components/lib/variables';
+
+.search-form-container {
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 640px;
+}
+
+.search-results-list {
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.search-filters {
+  & section {
+    margin-bottom: 1em;
+  }
+
+  & [role="tabpanel"] {
+    padding-left: 1rem;
+  }
+}
+
+.tags-search-warning {
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+.search-field {
+  margin-bottom: calc(var(--control-margin-bottom) / 2);
+}
